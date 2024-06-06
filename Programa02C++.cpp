@@ -1,19 +1,19 @@
 #include <iostream>
-using namespace std;
 
 int main() {
     int num1, num2;
 
-    cout<<"Dame el primer numero ";
-    cin>>num1;
-    cout<<"Dame el segundo numero ";
-    cin>>num2;
-    if (num1==num2) {
-        cout<<"Los numeros son iguales"<<endl;
-    } else if (num1>num2) {
-        cout<<"El primer numero es mayor que el segundo"<<endl;
+    std::cout << "Ingresa el primer numero: ";
+    std::cin >> num1;
+    std::cout << "Ingresa tu segundo numero: ";
+    std::cin >> num2;
+
+    if (num1 == num2) {
+        std::cout << "Los numeros son iguales." << std::endl;
+    } else if (num1 > num2) {
+        std::cout << "El primer numero es mayor que el segundo." << std::endl;
     } else {
-        cout<<"El segundo numero es mayor que el primero"<<endl;
+        std::cout << "El segundo numero es mayor que el primero." << std::endl;
     }
 
     return 0;
